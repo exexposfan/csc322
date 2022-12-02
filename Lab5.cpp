@@ -44,7 +44,14 @@ static void outputPageFaults(string reference) {
 }
 int main() {
   string reference = "";
-  int frames = 3;
+  int frames = 0;
+  while { // goes through the file, this makes sure it has a reference string of a max of 1000;
+    i++;
+    frame = i;
+    if (frame = 1000) {
+      break;
+    }
+  } 
   print outputPageFaults(reference, frames);
   return 0;
 } 
